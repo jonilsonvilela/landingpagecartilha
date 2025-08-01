@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretrizes do Projeto | Defesa do Cidadão: O Guia da OAB/RN Contra Fraudes Bancárias</title>
+    <title>Edital de Lançamento | Defesa do Cidadão: O Guia da OAB/RN Contra Fraudes Bancárias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <style>
         /* --- Configurações Globais e Variáveis de Cor --- */
         :root {
@@ -37,31 +40,50 @@
         }
 
         header {
-            background-color: var(--white); /* Alterado para branco */
-            color: var(--dark-blue); /* Cor do texto alterada para escura */
+            background-color: var(--white);
+            /* Alterado para branco */
+            color: var(--dark-blue);
+            /* Cor do texto alterada para escura */
             padding: 20px 0;
             text-align: center;
             border-bottom: 1px solid #ddd;
+            display: flex;
+            /* Ativa o Flexbox */
+            justify-content: center;
+            /* Centraliza o conteúdo do header */
+            align-items: center;
+            /* Alinha verticalmente a logo e o texto */
+            gap: 20px;
+            /* Cria um espaço entre a logo e o texto */
         }
-        
+
         header img.logo {
-            max-height: 80px; /* Tamanho do logo */
+            max-height: 200px;
+            /* Tamanho do logo */
             margin-bottom: 15px;
+            width: auto;
+        }
+
+        .header-text {
+            text-align: left;
+            /* Alinha o texto à esquerda */
         }
 
         header h1 {
             font-family: 'Merriweather', serif;
             font-size: 24px;
             margin: 0;
-            color: var(--dark-blue); /* Cor do título */
+            color: var(--dark-blue);
+            /* Cor do título */
         }
-        
+
         header span {
             font-size: 16px;
-            color: var(--oab-red); /* Cor do subtítulo */
+            color: var(--oab-red);
+            /* Cor do subtítulo */
             font-weight: bold;
         }
-        
+
         footer {
             background-color: var(--dark-blue);
             color: var(--white);
@@ -84,7 +106,7 @@
             font-family: 'Merriweather', serif;
             font-size: 48px;
             margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero p {
@@ -97,7 +119,7 @@
             padding: 60px 20px;
             border-bottom: 1px solid #e0e0e0;
         }
-        
+
         section:last-of-type {
             border-bottom: none;
         }
@@ -109,7 +131,7 @@
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .project-details p {
             font-size: 17px;
             text-align: justify;
@@ -132,15 +154,15 @@
             border-radius: 8px;
             flex-basis: 400px;
             flex-grow: 1;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
-        
+
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
         }
-        
+
         .card strong {
             font-family: 'Merriweather', serif;
             color: var(--dark-blue);
@@ -148,7 +170,7 @@
             margin-bottom: 10px;
             font-size: 18px;
         }
-        
+
         .card p.guide-text {
             font-size: 15px;
             color: #555;
@@ -182,7 +204,7 @@
         .timeline-item.left {
             left: 0;
         }
-        
+
         .timeline-item.right {
             left: 50%;
         }
@@ -199,7 +221,7 @@
             border-radius: 50%;
             z-index: 1;
         }
-        
+
         .timeline-item.right::after {
             left: -8.5px;
         }
@@ -210,17 +232,19 @@
             border-radius: 6px;
             position: relative;
         }
-        .timeline-content h4{
-            margin:0 0 10px 0;
+
+        .timeline-content h4 {
+            margin: 0 0 10px 0;
             font-family: 'Merriweather', serif;
             color: var(--dark-blue);
         }
+
         .timeline-content p {
             margin: 0;
             font-size: 18px;
             font-weight: bold;
         }
-        
+
         .guidelines-section {
             max-width: 800px;
             margin: auto;
@@ -229,7 +253,7 @@
             border-radius: 8px;
             border-top: 5px solid var(--oab-red);
         }
-        
+
         .guidelines-section h4 {
             font-family: 'Merriweather', serif;
             color: var(--dark-blue);
@@ -237,48 +261,68 @@
             margin-top: 20px;
             margin-bottom: 10px;
         }
-        
+
         .guidelines-section ul {
             list-style-type: disc;
             padding-left: 20px;
         }
-        
+
         .guidelines-section li {
             margin-bottom: 10px;
         }
-        
+
         .email-link {
             font-weight: bold;
             color: var(--oab-red);
             text-decoration: none;
         }
-        
+
         .email-link:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>ORDEM DOS ADVOGADOS DO BRASIL</h1>
-        <span>Comissão de Direito Bancário – Seccional Rio Grande do Norte</span>
+        <img src="logo.png" alt="Logo OAB/RN Comissão de Direito Bancário" class="logo">
+        <div class="header-text">
+            <h1>ORDEM DOS ADVOGADOS DO BRASIL</h1>
+            <span>Comissão de Direito Bancário – Seccional Rio Grande do Norte</span>
+        </div>
     </header>
 
     <main>
         <section class="hero">
-            <h2>Diretrizes do Projeto: Cartilha de Fraudes Bancárias</h2>
-            <p>Um guia central para a elaboração de um material de impacto, que irá proteger milhares de potiguares e consolidar a expertise da nossa comissão.</p>
+            <h2>Defesa do Cidadão: O Guia da OAB/RN Contra Fraudes Bancárias</h2>
+            <p>Um guia central para a elaboração de um material de impacto, que irá proteger milhares de potiguares e
+                consolidar a expertise da nossa comissão.</p>
         </section>
 
         <section id="projeto">
             <div class="container">
                 <h3>O Projeto: Nossa Missão e Impacto</h3>
                 <div class="project-details">
-                    <p>Vivemos uma epidemia silenciosa de fraudes digitais. A cada dia, cidadãos potiguares são alvos de golpes cada vez mais sofisticados que exploram a engenharia social — a arte de manipular a confiança para subtrair patrimônio e causar danos emocionais irreparáveis. O problema transcende a perda financeira; ele abala a segurança da população, gera desconfiança nas relações digitais e sobrecarrega o sistema de justiça com uma avalanche de demandas.</p>
-                    <p>O alvo dos criminosos é universal, mas atinge com especial crueldade os mais vulneráveis, como idosos e pessoas com menor familiaridade tecnológica. Diante deste cenário, a inação não é uma opção. A Comissão de Direito Bancário da OAB/RN, em cumprimento à sua função social, assume a vanguarda no combate a essa chaga, propondo a criação de uma ferramenta de defesa cívica: a **Cartilha de Prevenção a Fraudes Bancárias**.</p>
-                    <p>Este não é apenas um documento informativo. É uma declaração de que a advocacia potiguar está atenta e atuante. O impacto esperado é multifacetado: <strong>para a sociedade</strong>, a cartilha será um escudo de conhecimento, capacitando o cidadão a identificar e a rechaçar tentativas de golpe. <strong>Para a advocacia e o judiciário</strong>, servirá como um material de apoio técnico consolidado, uniformizando o entendimento sobre as principais teses de responsabilidade civil e os procedimentos corretos de ação. <strong>Para a classe política</strong>, evidenciará a dimensão do problema e a necessidade de políticas públicas de segurança digital mais robustas. Em suma, este projeto visa transformar a informação em poder, a prevenção em regra e a justiça em um caminho mais acessível para as vítimas.</p>
+                    <p>Vivemos uma epidemia silenciosa de fraudes digitais. A cada dia, cidadãos potiguares são alvos de
+                        golpes cada vez mais sofisticados que exploram a engenharia social — a arte de manipular a
+                        confiança para subtrair patrimônio e causar danos emocionais irreparáveis. O problema transcende
+                        a perda financeira; ele abala a segurança da população, gera desconfiança nas relações digitais
+                        e sobrecarrega o sistema de justiça com uma avalanche de demandas.</p>
+                    <p>O alvo dos criminosos é universal, mas atinge com especial crueldade os mais vulneráveis, como
+                        idosos e pessoas com menor familiaridade tecnológica. Diante deste cenário, a inação não é uma
+                        opção. A Comissão de Direito Bancário da OAB/RN, em cumprimento à sua função social, assume a
+                        vanguarda no combate a essa chaga, propondo a criação de uma ferramenta de defesa cívica: a
+                        **Cartilha de Prevenção a Fraudes Bancárias**.</p>
+                    <p>Este não é apenas um documento informativo. É uma declaração de que a advocacia potiguar está
+                        atenta e atuante. O impacto esperado é multifacetado: <strong>para a sociedade</strong>, a
+                        cartilha será um escudo de conhecimento, capacitando o cidadão a identificar e a rechaçar
+                        tentativas de golpe. <strong>Para a advocacia e o judiciário</strong>, servirá como um material
+                        de apoio técnico consolidado, uniformizando o entendimento sobre as principais teses de
+                        responsabilidade civil e os procedimentos corretos de ação. <strong>Para a classe
+                            política</strong>, evidenciará a dimensão do problema e a necessidade de políticas públicas
+                        de segurança digital mais robustas. Em suma, este projeto visa transformar a informação em
+                        poder, a prevenção em regra e a justiça em um caminho mais acessível para as vítimas.</p>
                 </div>
             </div>
         </section>
@@ -286,27 +330,48 @@
         <section id="estrutura" style="background-color: var(--light-gray);">
             <div class="container">
                 <h3>Estrutura da Cartilha: Guia por Seção</h3>
-                <p style="text-align: center; max-width: 800px; margin: -30px auto 50px auto;">Cada membro poderá escolher ou ser alocado em um dos capítulos abaixo. O objetivo é detalhar cada tópico de forma aprofundada, seguindo as diretrizes de entrega.</p>
+                <p style="text-align: center; max-width: 800px; margin: -30px auto 50px auto;">Cada membro poderá
+                    escolher ou ser alocado em um dos capítulos abaixo. O objetivo é detalhar cada tópico de forma
+                    aprofundada, seguindo as diretrizes de entrega.</p>
                 <div class="card-container">
                     <div class="card">
                         <strong>Seção 1: A Engenharia Social</strong>
-                        <p class="guide-text"><b>Guia para o autor:</b> O foco aqui é educar. Defina o que é engenharia social em termos simples, explicando como os golpistas manipulam emoções (medo, urgência, ganância). Aborde a psicologia por trás dos golpes e introduza, de forma sucinta, a Súmula 479 do STJ para contextualizar a responsabilidade objetiva dos bancos, mostrando que a falha de segurança é um risco da atividade.</p>
+                        <p class="guide-text"><b>Guia para o autor:</b> O foco aqui é educar. Defina o que é engenharia
+                            social em termos simples, explicando como os golpistas manipulam emoções (medo, urgência,
+                            ganância). Aborde a psicologia por trás dos golpes e introduza, de forma sucinta, a Súmula
+                            479 do STJ para contextualizar a responsabilidade objetiva dos bancos, mostrando que a falha
+                            de segurança é um risco da atividade.</p>
                     </div>
                     <div class="card">
                         <strong>Seção 2: O Catálogo de Golpes</strong>
-                        <p class="guide-text"><b>Guia para o autor:</b> Esta é a seção mais prática. Detalhe os golpes mais comuns (PIX, Mão Fantasma, Falsa Central, etc.), explicando o *modus operandi* de cada um. Use exemplos curtos e diretos. Crie uma subseção especial para o "Golpe do Falso Precatório/Advogado", alertando sobre o uso de dados de processos públicos para enganar clientes.</p>
+                        <p class="guide-text"><b>Guia para o autor:</b> Esta é a seção mais prática. Detalhe os golpes
+                            mais comuns (PIX, Mão Fantasma, Falsa Central, etc.), explicando o *modus operandi* de cada
+                            um. Use exemplos curtos e diretos. Crie uma subseção especial para o "Golpe do Falso
+                            Precatório/Advogado", alertando sobre o uso de dados de processos públicos para enganar
+                            clientes.</p>
                     </div>
                     <div class="card">
                         <strong>Seção 3: Manual de Prevenção</strong>
-                        <p class="guide-text"><b>Guia para o autor:</b> O tom deve ser proativo. Crie uma lista de "regras de ouro" de segurança. Dê dicas acionáveis sobre como criar senhas fortes, a importância crítica de ativar a autenticação de dois fatores (2FA) em todos os apps, e como identificar sites e e-mails falsos. O objetivo é criar um "escudo digital" para o leitor.</p>
+                        <p class="guide-text"><b>Guia para o autor:</b> O tom deve ser proativo. Crie uma lista de
+                            "regras de ouro" de segurança. Dê dicas acionáveis sobre como criar senhas fortes, a
+                            importância crítica de ativar a autenticação de dois fatores (2FA) em todos os apps, e como
+                            identificar sites e e-mails falsos. O objetivo é criar um "escudo digital" para o leitor.
+                        </p>
                     </div>
                     <div class="card">
                         <strong>Seção 4: Fui Vítima, e Agora?</strong>
-                        <p class="guide-text"><b>Guia para o autor:</b> Este é um guia de emergência. Crie um passo a passo claro e numerado do que fazer nos primeiros 60 minutos após o golpe. Detalhe como acionar o Mecanismo Especial de Devolução (MED) do PIX junto ao banco e a importância de registrar o Boletim de Ocorrência. A clareza e a ordem das ações são cruciais aqui.</p>
+                        <p class="guide-text"><b>Guia para o autor:</b> Este é um guia de emergência. Crie um passo a
+                            passo claro e numerado do que fazer nos primeiros 60 minutos após o golpe. Detalhe como
+                            acionar o Mecanismo Especial de Devolução (MED) do PIX junto ao banco e a importância de
+                            registrar o Boletim de Ocorrência. A clareza e a ordem das ações são cruciais aqui.</p>
                     </div>
                     <div class="card">
                         <strong>Seção 5: A Quem Recorrer no RN</strong>
-                        <p class="guide-text"><b>Guia para o autor:</b> Esta seção é um serviço de utilidade pública. Compile uma lista verificada e atualizada de contatos dos principais órgãos de defesa e segurança no estado: PROCON (estadual e municipal), delegacias especializadas (como a DEFD), Ministério Público e os contatos dos Juizados Especiais Cíveis. A precisão dos endereços e telefones é fundamental.</p>
+                        <p class="guide-text"><b>Guia para o autor:</b> Esta seção é um serviço de utilidade pública.
+                            Compile uma lista verificada e atualizada de contatos dos principais órgãos de defesa e
+                            segurança no estado: PROCON (estadual e municipal), delegacias especializadas (como a DEFD),
+                            Ministério Público e os contatos dos Juizados Especiais Cíveis. A precisão dos endereços e
+                            telefones é fundamental.</p>
                     </div>
                 </div>
             </div>
@@ -318,17 +383,26 @@
                 <div class="guidelines-section">
                     <h4>Aspectos Técnicos da Entrega</h4>
                     <ul>
-                        <li>O material produzido por cada membro ou grupo para sua respectiva seção deverá ter o <strong>tamanho máximo de 5 (cinco) páginas</strong>.</li>
-                        <li>O texto deve seguir um tom técnico-jurídico, porém acessível ao público leigo, evitando jargões excessivos e priorizando a clareza.</li>
-                        <li>A entrega do material deve ser feita em formato de texto (Word, PDF), com <strong>formatação seguindo as normas da ABNT</strong>, incluindo as referências bibliográficas.</li>
-                        <li>A lista de <strong>referências bibliográficas é obrigatória</strong> e deve ser incluída dentro do limite de 5 páginas.</li>
+                        <li>O material produzido por cada membro ou grupo para sua respectiva seção deverá ter o
+                            <strong>tamanho máximo de 5 (cinco) páginas</strong>.
+                        </li>
+                        <li>O texto deve seguir um tom técnico-jurídico, porém acessível ao público leigo, evitando
+                            jargões excessivos e priorizando a clareza.</li>
+                        <li>A entrega do material deve ser feita em formato de texto (Word, PDF), com <strong>formatação
+                                seguindo as normas da ABNT</strong>, incluindo as referências bibliográficas.</li>
+                        <li>A lista de <strong>referências bibliográficas é obrigatória</strong> e deve ser incluída
+                            dentro do limite de 5 páginas.</li>
                     </ul>
 
                     <h4>Processo de Atribuição e Submissão</h4>
                     <ul>
-                        <li>Cada membro da comissão poderá <strong>escolher um dos capítulos</strong> da cartilha para desenvolver ou <strong>ser alocado</strong> pela coordenação para garantir a cobertura de todos os temas.</li>
-                        <li>O material finalizado deve ser enviado para os seguintes e-mails da coordenação para revisão e consolidação:</li>
-                        <li><a href="mailto:jonilsonvilela@mdradvocacia.com" class="email-link">jonilsonvilela@mdradvocacia.com</a></li>
+                        <li>Cada membro da comissão poderá <strong>escolher um dos capítulos</strong> da cartilha para
+                            desenvolver ou <strong>ser alocado</strong> pela coordenação para garantir a cobertura de
+                            todos os temas.</li>
+                        <li>O material finalizado deve ser enviado para os seguintes e-mails da coordenação para revisão
+                            e consolidação:</li>
+                        <li><a href="mailto:jonilsonvilela@mdradvocacia.com"
+                                class="email-link">jonilsonvilela@mdradvocacia.com</a></li>
                         <li><a href="mailto:bruna@mdradvocacia.com" class="email-link">bruna@mdradvocacia.com</a></li>
                     </ul>
                 </div>
@@ -354,7 +428,7 @@
                 </div>
             </div>
         </section>
-        
+
     </main>
 
     <footer>
@@ -365,4 +439,5 @@
     </footer>
 
 </body>
+
 </html>
